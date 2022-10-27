@@ -76,5 +76,6 @@ teamLead_2.setDevelopers(developer_1);
 project_1.setTeamLead(teamLead_1);
 project_2.setTeamLead(teamLead_2);
 manager_1.setProjects(project_1);
+manager_1.setProjects(project_2);
 director.setManagers(manager_1);
 console.log(director.getProjects());
