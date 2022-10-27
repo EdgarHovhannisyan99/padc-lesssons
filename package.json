@@ -1,0 +1,23 @@
+{
+  "name": "gittest",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000p\u0000a\u0000d\u0000c\u0000-\u0000l\u0000e\u0000s\u0000s\u0000s\u0000o\u0000n\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -p ./tsconfig.json && node index.js",
+    "generateTSConfig": "tsc --init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdgarHovhannisyan99/padc-lesssons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdgarHovhannisyan99/padc-lesssons/issues"
+  },
+  "homepage": "https://github.com/EdgarHovhannisyan99/padc-lesssons#readme",
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
