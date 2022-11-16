@@ -1,0 +1,27 @@
+.blog {
+  border: 1px solid black;
+  width: 25%;
+  padding: 15px;
+  margin: 30px 0;
+}
+
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.change-color-button {
+  height: 30px;
+}
