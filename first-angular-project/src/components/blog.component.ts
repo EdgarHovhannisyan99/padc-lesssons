@@ -50,7 +50,12 @@ export class BlogComponent {
   public onChangeColor = (id: number): void => {
     const index = this.data.findIndex(i => i.id === id)
     const color = this.generateColor()
-    console.log(this.data[index].color['background-color'])
     this.data[index].color['background-color'] = color
+    let findColor = this.data.findIndex(i => i.color === color)
+    if(findColor > -1) {
+      this.onChangeColor(id)
+    }else {
+      this.data[index] = {...this.data[index]}
+    }
   }
 }
