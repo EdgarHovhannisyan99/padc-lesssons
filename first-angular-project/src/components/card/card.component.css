@@ -1,0 +1,43 @@
+.card-content {
+    margin: 80px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card {
+    width: 25%;
+    border: 1px solid #eddde0;
+    padding: 15px;
+
+}
+
+.card .card-img {
+    width: 288px;
+    height: 288px;
+}
+
+.card .card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-description {
+    width: 100%;
+}
+
+.card-description p {
+    margin: 10px 0;
+    width: 80%;
+}
+
+.card-button button {
+    background-color: #60c339;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}

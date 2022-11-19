@@ -1,0 +1,17 @@
+<div class="card-content">
+    <div class="card"  *ngFor="let i of cardData">
+        <div class="card-img">
+            <img src={{i.img_src}}
+                 alt="img">
+        </div>
+        <div class="card-description">
+            <p>{{i.description}}</p>
+        </div>
+        <div class="card-price">
+            <p>{{i.price}} ₽</p>
+        </div>
+        <div class="card-button">
+            <button>В Карзину</button>
+        </div>
+    </div>
+</div>

@@ -7,6 +7,13 @@ import {Component} from "@angular/core";
 })
 
 export class HeaderComponent {
+    public showNumbers: boolean = false
 
+    public showAllNumber = (): void => {
+        this.showNumbers = true
+    }
 
+    public hideNumbers = (): void => {
+        this.showNumbers = false
+    }
 }

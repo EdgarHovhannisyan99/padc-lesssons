@@ -24,6 +24,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.header-phone {
+    position: relative;
+}
+
+.hidden-number {
+    position: absolute;
 }
 
 .tel {

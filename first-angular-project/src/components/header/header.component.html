@@ -13,10 +13,13 @@
         </div>
     </div>
     <div class="header-title">
-        <div>
+        <div class="header-phone" (mouseenter)="showAllNumber()" (mouseleave)="hideNumbers()">
             <a class="tel" href="tel:88005555124">
-                8 (800) 555-51-24
+                8 (800) 555-51-24 \/
             </a>
+            <div *ngIf="showNumbers" class="hidden-number">
+                <a href="tel:88005555124" class="tel"> 8 (800) 555-51-24</a>
+            </div>
         </div>
         <div>
             <h1>BRITOLOGY</h1>
