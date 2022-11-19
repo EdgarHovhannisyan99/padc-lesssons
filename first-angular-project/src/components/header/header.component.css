@@ -1,0 +1,47 @@
+.header {
+    margin-bottom: 100px;
+}
+.header-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-nav-bar-ul {
+    display: flex;
+}
+
+.header-nav-bar-ul li {
+    list-style-type: none;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #777;
+}
+
+.header-title {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tel {
+    color: black;
+}
+
+.header-categories {
+    display: flex;
+    justify-content: center;
+}
+
+.header-categories-ul {
+    display: flex;
+}
+
+.header-categories-ul li {
+    list-style-type: none;
+    margin: 0 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
