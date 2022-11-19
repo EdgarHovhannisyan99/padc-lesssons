@@ -1,0 +1,13 @@
+<div>
+    <div *ngFor = "let i of data" >
+          <div  class="blog" style="{{i.color}}">
+            <div class="close-button">
+              <button [id]="i.id" (click)="onClose(i.id)">X</button>
+            </div>
+            <div class="blog-content">
+              <p>{{i.title}}</p>
+              <button [id]="i.id" (click)="onChangeColor(i.id)" class="change-color-button">Change Color</button>
+            </div>
+          </div>
+    </div>
+</div>
