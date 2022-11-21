@@ -2,10 +2,11 @@
     margin-bottom: 100px;
 }
 .header-nav-bar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    background-color: #f2f2f2;
 }
 
 .header-nav-bar-ul {
@@ -22,35 +23,58 @@
 .header-title {
     padding: 20px 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
+.header-search {
+    margin: 0 20px;
+}
+
+.header-search input {
+    height: 30px;
+    width: 250px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid lightpink;
+}
+
+.header-search button {
+    height: 32px;
+    color: white;
+    border: none;
+    background-color: #0d5182;
+}
+
+.header-phone h3, .header-phone p {
+    margin: 0;
+    padding: 0;
+}
+
 .header-phone {
-    position: relative;
+    margin: 0 30px;
 }
 
-.hidden-number {
-    position: absolute;
-}
-
-.tel {
-    color: black;
+.header-phone p{
+    color: gray;
 }
 
 .header-categories {
-    display: flex;
-    justify-content: center;
+    background: linear-gradient(to bottom,#05406a,#05568d);
 }
 
 .header-categories-ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-categories-ul li {
+    padding: 10px;
+    color: white;
     list-style-type: none;
+    width: 120px;
     margin: 0 20px;
-    font-size: 18px;
     cursor: pointer;
 }
+

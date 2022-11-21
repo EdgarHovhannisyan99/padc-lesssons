@@ -1,45 +1,44 @@
 <header class="header">
     <div class="header-nav-bar">
         <ul class="header-nav-bar-ul">
-            <li>О нас</li>
-            <li>Программа лояльности</li>
-            <li>Сотрудничество</li>
-            <li>Доставка</li>
-            <li>Оплата</li>
-            <li>Контакты</li>
+            <li>Մեր մասին</li>
+            <li>Վաճառասրահներ</li>
+            <li>Ծառայություններ</li>
+            <li>Ակցիաներ</li>
+            <li>Նվեր-քարտ</li>
+            <li>Ապառիկ</li>
         </ul>
         <div>
-            <p>Войти</p>
+            <p>ՄՈՒՏՔ</p>
         </div>
     </div>
     <div class="header-title">
         <div class="header-phone" (mouseenter)="showAllNumber()" (mouseleave)="hideNumbers()">
-            <a class="tel" href="tel:88005555124">
-                8 (800) 555-51-24 \/
-            </a>
-            <div *ngIf="showNumbers" class="hidden-number">
-                <a href="tel:88005555124" class="tel"> 8 (800) 555-51-24</a>
-            </div>
+            <img width="400px" height="60px"  src="https://www.zigzag.am/static/version1666962451/frontend/Magento/zigzag/hy_AM/images/svg/main_logo_am.svg" alt="img">
         </div>
-        <div>
-            <h1>BRITOLOGY</h1>
+        <div class="header-search">
+            <input type="text" placeholder="Մուտքագրեք ապրանքի անվանումը" >
+            <button>ՈՐՈՆԵԼ</button>
         </div>
-        <div>
-            <p>Search</p>
+        <div class="header-phone">
+            <h3>+374 11 900 800</h3>
+            <p>Զանգահարե՛ք մեզ</p>
         </div>
+
     </div>
     <div class="header-categories">
         <ul class="header-categories-ul">
-            <li>Акции</li>
-            <li>Идеи подарков</li>
-            <li>Бритвы и аксессуары</li>
-            <li>Косметика для бритья</li>
+            <li>Կատալոգ</li>
+            <li>Հեռուստացույցներ, աուդիո և վիդեոտեխնիկա</li>
+            <li>Համակարգիչներ, նոթբուքներ, պլանշետներ</li>
+            <li>Հեռախոսներ և կապի միջոցներ</li>
             <li>
-                Уход за бородой и усами
+                Կենցաղային տեխնիկա
             </li>
             <li>
-                Уход за лицом и телом
+                Խոհանոցային տեխնիկա
             </li>
+            <li>Կլիմատիկ տեխնիկա</li>
         </ul>
     </div>
 </header>

@@ -1,21 +1,14 @@
-.card-content {
-    margin: 80px 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 .card {
-    width: 25%;
+    transition: all 0.3s;
     border: 1px solid #eddde0;
     padding: 15px;
-
+    cursor: pointer;
 }
 
 .card .card-img {
-    width: 288px;
-    height: 288px;
+    width: 200px;
+    height: 200px;
 }
 
 .card .card-img img {
@@ -23,8 +16,10 @@
     height: 100%;
 }
 
-.card-description {
+.card-category {
     width: 100%;
+    color: gray;
+    font-size: 12px;
 }
 
 .card-description p {
@@ -32,12 +27,27 @@
     width: 80%;
 }
 
+.card-button {
+    display: flex;
+    justify-content: center;
+}
+
 .card-button button {
-    background-color: #60c339;
+    transition: all 0.3s;
+    height: 0;
+    visibility: hidden;
+    background-color: #0d5182;
     border: none;
     color: white;
     font-size: 18px;
-    margin-top: 20px;
     padding: 5px 15px;
+    margin: 20px;
     cursor: pointer;
+    border-radius: 5px;
 }
+
+.card:hover button {
+    height: 100%;
+   visibility: visible;
+}
+
