@@ -3,5 +3,6 @@ export interface ICard {
     img: string,
     category: string,
     name: string,
+    liked: boolean,
     price: number
 }

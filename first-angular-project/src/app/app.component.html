@@ -1,5 +1,5 @@
 <app-header></app-header>
 <app-banner></app-banner>
 <div class="card-content">
-<app-card *ngFor="let i of cardData"  [card]="i"></app-card>
+<app-card *ngFor="let i of cardData" (like)="onLike(i.id)"  [card]="i"></app-card>
 </div>

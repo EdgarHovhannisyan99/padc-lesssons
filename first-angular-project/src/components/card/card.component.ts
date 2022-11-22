@@ -1,5 +1,5 @@
-import {Component, Input} from "@angular/core";
-import { ICard } from "src/models";
+import {Component, EventEmitter, Input, Output} from "@angular/core";
+import {ICard} from "src/models";
 
 @Component({
   selector: 'app-card',
@@ -9,7 +9,12 @@ import { ICard } from "src/models";
 
 
 export class CardComponent {
- @Input() card: ICard
+  @Input() card: ICard
+  @Output() like = new EventEmitter()
+
+  public handleLike = (): void => {
+    this.like.emit()
+  }
 
 
 }

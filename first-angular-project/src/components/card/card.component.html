@@ -8,6 +8,10 @@
         </div>
         <div class="card-description">
             <p>{{card.name}}</p>
+          <div id="{{card.id}}" (click)="handleLike()">
+            <img *ngIf="!card.liked" width="25" height="25" src="../../assets/images/no-liked.png" alt="img">
+            <img *ngIf="card.liked" width="25" height="25" src="../../assets/images/liked.png" alt="img">
+          </div>
         </div>
         <div class="card-price">
             <p>{{card.price}} ֏</p>
