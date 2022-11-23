@@ -6,3 +6,8 @@ export interface ICard {
     liked: boolean,
     price: number
 }
+
+export interface IBrand {
+    id: number,
+    img_src: string
+}

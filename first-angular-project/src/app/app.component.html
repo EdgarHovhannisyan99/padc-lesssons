@@ -1,5 +1,42 @@
 <app-header></app-header>
 <app-banner></app-banner>
+<div class="card-title">
+    <h3>Թեժ գներ</h3>
+</div>
 <div class="card-content">
-<app-card *ngFor="let i of cardData" (like)="onLike(i.id)"  [card]="i"></app-card>
+    <app-card *ngFor="let i of cardData" (like)="onLike(i.id)" [card]="i"></app-card>
+</div>
+
+<div class="content-advertisement">
+    <img width="970" height="170"
+         src="https://www.zigzag.am/media/mageplaza/bannerslider/banner/image/k/-/k-array_940x170_am.jpg" alt="img">
+</div>
+
+<div class="card-title">
+    <h3>Թոփ վաճառվողներ</h3>
+</div>
+<div class="card-content">
+    <app-card *ngFor="let i of newProduct" (like)="onLike(i.id)" [card]="i"></app-card>
+</div>
+
+<div class="images-block">
+    <div class="first-img-block">
+        <div><img width="285" height="377"
+                  src="https://www.zigzag.am/media/mageplaza/bannerslider/banner/image/b/o/bosch-mum_237x316_am.png"
+                  alt="img"></div>
+        <div><img width="285" height="377"
+                  src="https://www.zigzag.am/media/mageplaza/bannerslider/banner/image/d/u/duamondi_246x316_am.jpg"
+                  alt=""></div>
+    </div>
+    <div>
+        <img width="590" height="377"
+             src="https://www.zigzag.am/media/mageplaza/bannerslider/banner/image/h/a/haier_494x316_am.jpg" alt="">
+    </div>
+</div>
+
+<div class="card-title">
+    <h3>Ապրանքանիշեր</h3>
+</div>
+<div class="brand-component">
+    <app-brand *ngFor="let brand of brands" [brand]="brand"></app-brand>
 </div>
