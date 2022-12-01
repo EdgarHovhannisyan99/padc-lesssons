@@ -1,2 +1,9 @@
-<app-header></app-header>
-<app-footer></app-footer>
+<div class="main">
+  <div [ngClass]="showDashboard ? 'dashboard' : 'dashboard close'">
+    <app-dashboard [links]="links"></app-dashboard>
+  </div>
+  <div class="main-content">
+    <app-top-bar (showDashboard)="onShowDashboard()"></app-top-bar>
+    <app-main></app-main>
+  </div>
+</div>

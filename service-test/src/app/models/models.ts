@@ -1,4 +1,5 @@
 export interface ILinks {
   id: number
-  link: string
+  link: string,
+  title: string
 }

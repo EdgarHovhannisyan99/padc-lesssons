@@ -7,16 +7,24 @@ export class LinksService {
   public links = [
     {
       id: 1,
-      link: 'home'
+      link: 'https://example.com/',
+      title: 'Dashboard'
     },
 
     {
       id: 2,
-      link: 'About Us'
+      link: 'https://example.com/',
+      title: 'Accesses'
     },
     {
       id: 3,
-      link: 'Contact Us'
+      link: 'https://example.com/',
+      title: 'Users'
+    },
+    {
+      id: 4,
+      link: 'https://example.com/',
+      title: 'Requests'
     },
   ]
 }
