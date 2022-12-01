@@ -1,0 +1,22 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content-titles {
+  display: flex;
+}
+
+.main-content-titles p {
+  font-size: 30px;
+  margin: 30px 0;
+  border: 1px solid;
+  padding: 3px 100px;
+  cursor: pointer;
+}
+
+.active-page {
+  background-color: #00a2e8;
+  color: white;
+  border: 1px solid #00a2e8;
+}

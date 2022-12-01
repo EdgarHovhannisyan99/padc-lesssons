@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import { ILinks } from './models/models';
 import { LinksService } from './services/links.service';
 
 @Component({
@@ -6,10 +7,18 @@ import { LinksService } from './services/links.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
-  title = 'service-test';
-  links: Array<any> = []
+  showDashboard: boolean = false
+  links: Array<ILinks>
   constructor(links: LinksService) {
     this.links = links.links
   }
+
+  onShowDashboard = (): void => {
+    this.showDashboard = !this.showDashboard
+    console.log(this.showDashboard)
+  }
+
 }

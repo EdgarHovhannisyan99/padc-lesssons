@@ -1,28 +1,29 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HeaderComponent} from './components/header/header.component'
-import {FooterComponent} from './components/footer/footer.component'
+import {TopBarComponent} from "./compnents/topBar/topBar.component";
+import {DashboardComponent} from "./compnents/dashboard/dashboard.component";
+import {MainComponent} from "./compnents/mainContent/main.component";
 import { LinksService } from './services/links.service';
 import {CardService} from "./services/card.service";
-import {MainComponent} from "./components/main/main.component";
-import {BlogComponent} from "./components/blog/blog.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    MainComponent,
-    BlogComponent
+    TopBarComponent,
+    DashboardComponent,
+    MainComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
-  providers: [LinksService, CardService],
+  providers: [LinksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
