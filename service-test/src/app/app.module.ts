@@ -7,16 +7,16 @@ import { AppComponent } from './app.component';
 import {TopBarComponent} from "./compnents/topBar/topBar.component";
 import {DashboardComponent} from "./compnents/dashboard/dashboard.component";
 import {MainComponent} from "./compnents/mainContent/main.component";
+import {SettingsComponent} from "./compnents/settings/settings.component";
 import { LinksService } from './services/links.service';
-import {CardService} from "./services/card.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     DashboardComponent,
-    MainComponent
-
+    MainComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
