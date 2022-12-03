@@ -8,23 +8,30 @@ export class LinksService {
     {
       id: 1,
       link: 'https://example.com/',
-      title: 'Dashboard'
+      title: 'Dashboard',
+      checked: true
     },
 
     {
       id: 2,
       link: 'https://example.com/',
-      title: 'Accesses'
+      title: 'Accesses',
+      checked: true
+
     },
     {
       id: 3,
       link: 'https://example.com/',
-      title: 'Users'
+      title: 'Users',
+      checked: true
+
     },
     {
       id: 4,
       link: 'https://example.com/',
-      title: 'Requests'
+      title: 'Requests',
+      checked: true
+
     },
   ]
 }
