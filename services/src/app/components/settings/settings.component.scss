@@ -1,0 +1,21 @@
+.input-form div {
+  input {
+    margin: 0 20px;
+  }
+}
+
+.input-form {
+  margin: 40px;
+}
+.save-button {
+  display: flex;
+  justify-content: center;
+  button {
+    border: none;
+    font-size: 18px;
+    background-color: #3886fb;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 10px;
+  }
+}

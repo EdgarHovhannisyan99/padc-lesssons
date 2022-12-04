@@ -1,0 +1,10 @@
+.top-bar {
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+.top-bar-button {
+  border: none;
+  font-size: 38px;
+  cursor: pointer;
+}
