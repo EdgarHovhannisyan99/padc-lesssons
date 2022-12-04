@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="main-content-titles">
+    <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
+      <ul class="nav nav-pills content-nav">
+        <li class="nav-item" *ngFor="let link of navLinks; let i = index">
+          <a (click)="changePage(i)" [ngClass]="activePage === i ? 'nav-link active': 'nav-link'"
+             href="#">{{link}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main-page">
+    <app-settings></app-settings>
+  </div>
+</div>

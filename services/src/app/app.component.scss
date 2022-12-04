@@ -1,0 +1,25 @@
+.app-main {
+  display: flex;
+}
+
+.main-content {
+  padding-left: 120px;
+  z-index: 999;
+}
+
+.dashboard {
+  position: absolute;
+  width: 100%;
+  left: 0
+}
+
+.dashboard-close {
+  left: -100%;
+}
+
+.main-content {
+  width: 100%;
+  transition: all 0.3s;
+  padding-left: 280px;
+}
+

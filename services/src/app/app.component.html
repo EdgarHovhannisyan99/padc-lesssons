@@ -1,0 +1,14 @@
+<div class="app-main">
+  <div [ngClass]="menuIsClosed ? 'dashboard' : 'dashboard-close'">
+    <app-dashboard></app-dashboard>
+  </div>
+  <div class="main-content">
+    <div class="top-bar">
+      <app-top-bar></app-top-bar>
+    </div>
+    <div>
+      <app-main></app-main>
+    </div>
+  </div>
+</div>
+
