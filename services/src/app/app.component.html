@@ -1,8 +1,8 @@
 <div class="app-main">
-  <div [ngClass]="menuIsClosed ? 'dashboard' : 'dashboard-close'">
+  <div [ngClass]="showMenu() ? 'dashboard' : 'dashboard-close'">
     <app-dashboard></app-dashboard>
   </div>
-  <div class="main-content">
+  <div [ngClass]="showMenu() ? 'main-content': 'main-content-open'">
     <div class="top-bar">
       <app-top-bar></app-top-bar>
     </div>

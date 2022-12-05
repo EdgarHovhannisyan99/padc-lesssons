@@ -1,0 +1,38 @@
+.todos {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todos-form {
+  width: 45%;
+  text-align: center;
+
+  input, textarea {
+    margin: 20px 0;
+  }
+
+  button {
+    border: none;
+    color: white;
+    background-color: #8282eb;
+    font-size: 18px;
+    padding: 3px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.todos-list {
+  width: 45%;
+  border: 1px solid #a5a5a5;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.todo-block {
+  margin: 8px 0;
+  border: 1px solid #e0d7d7;
+  padding: 10px;
+  text-align: center;
+}

@@ -1,11 +1,11 @@
 <div>
-  <div (click)="linksIsEqual()" class="input-form" *ngFor="let form of links">
+  <div (click)="linksIsEqual()" class="input-form" *ngFor="let form of links; let i = index">
     <div class="input-group flex-nowrap">
       <input (change)="linksIsEqual()" [(ngModel)]="form.title" type="text" class="form-control" placeholder="Name" aria-label="Username"
              aria-describedby="addon-wrapping">
       <input [(ngModel)]="form.link" type="text" class="form-control" placeholder="Username" aria-label="Link"
              aria-describedby="addon-wrapping">
-      <input [(ngModel)]="form.isActive" (change)="linksIsEqual()" class="form-check-input mt-0" type="checkbox" value=""
+      <input checked="{{form.isActive}}" (change)="onCheck(i)" class="form-check-input mt-0" type="checkbox" value=""
              aria-label="Checkbox for following text input">
     </div>
   </div>

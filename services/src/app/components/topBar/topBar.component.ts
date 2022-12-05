@@ -7,16 +7,17 @@ import {TopBarService} from 'src/app/services/topBarService';
   styleUrls: ['./topBar.component.css']
 })
 export class TopBarComponent implements OnInit {
-  topBar!: any
+  topBar!: boolean
 
-  constructor(close: TopBarService) {
-    this.topBar = close
+  constructor(public topBarService: TopBarService) {
+    this.topBar = topBarService.geTMenuStatus()
   }
 
   ngOnInit(): void {
+
   }
 
   public toggleMenu(): void {
-    this.topBar.toggleMenu()
+    this.topBarService.toggleMenu()
   }
 }
