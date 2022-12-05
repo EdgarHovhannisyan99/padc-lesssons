@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
   public navLinks = ['Todos', 'Settings']
-  public activePage = 0
+  public activePage = 1
 
   changePage(index: number):void {
     this.activePage = index

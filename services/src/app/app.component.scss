@@ -8,12 +8,15 @@
 }
 
 .dashboard {
+  transition: all 0.3s;
   position: absolute;
   width: 100%;
   left: 0
 }
 
 .dashboard-close {
+  transition: all 0.3s;
+  position: absolute;
   left: -100%;
 }
 
@@ -23,3 +26,8 @@
   padding-left: 280px;
 }
 
+.main-content-open {
+  width: 100%;
+  transition: all 0.3s;
+  padding-left: 5px;
+}

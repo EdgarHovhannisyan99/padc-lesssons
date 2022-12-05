@@ -1,7 +1,7 @@
 
 
 export class TopBarService {
-  private _menuClosed: boolean = true
+  private _menuClosed: boolean = false
 
   constructor() {
 

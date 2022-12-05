@@ -12,11 +12,12 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { TodosComponent } from './components/todos/todos.component';
 import { TopBarService } from './services/topBarService';
 import { LinksServices } from './services/linksServices';
+import { TodoServices } from './services/todoServices';
 
 @NgModule({
   declarations: [
-    AppComponent,
     TopBarComponent,
+    AppComponent,
     DashboradComponent, MainComponent, SettingsComponent, TodosComponent
   ],
   imports: [
@@ -25,7 +26,7 @@ import { LinksServices } from './services/linksServices';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [TopBarService, LinksServices],
+  providers: [TopBarService, LinksServices, TodoServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

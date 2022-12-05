@@ -6,7 +6,7 @@
           <span class="fs-5 d-none d-sm-inline">Menu</span>
         </a>
         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-          <li class="nav-item" *ngFor="let link of links; let i = index">
+          <li class="nav-item" *ngFor="let link of getLinks(); let i = index">
             <a *ngIf="link.isActive" [href]="link.link" class="nav-link align-middle px-0">
               {{link.title}}
             </a>

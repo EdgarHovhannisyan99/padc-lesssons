@@ -10,6 +10,7 @@
     </nav>
   </div>
   <div class="main-page">
-    <app-settings></app-settings>
+    <app-todos *ngIf="activePage===0"></app-todos>
+    <app-settings *ngIf="activePage===1"></app-settings>
   </div>
 </div>
