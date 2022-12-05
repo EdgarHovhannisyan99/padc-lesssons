@@ -20,4 +20,8 @@ export class SettingsComponent {
     return JSON.stringify(this.links) === JSON.stringify(this.linkService._links)
   }
 
+  onSave ():void {
+    this.linkService.saveLinks(this.links)
+  }
+
 }

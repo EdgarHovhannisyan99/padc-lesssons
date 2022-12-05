@@ -17,6 +17,7 @@ export class LinksServices {
   }
 
   saveLinks(data: ILinks[]) {
-    console.log(data)
+    this._links = JSON.parse(JSON.stringify(data))
+    console.log(this._links)
   }
 }
