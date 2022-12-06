@@ -5,11 +5,11 @@
              aria-describedby="addon-wrapping">
       <input [(ngModel)]="form.link" type="text" class="form-control" placeholder="Username" aria-label="Link"
              aria-describedby="addon-wrapping">
-      <input checked="{{form.isActive}}" (change)="onCheck(i)" class="form-check-input mt-0" type="checkbox" value=""
+      <input [defaultChecked]='form.isActive' (change)="linksIsEqual()" [(ngModel)]="form.isActive" class="form-check-input mt-0" type="checkbox" value=""
              aria-label="Checkbox for following text input">
     </div>
   </div>
-  <div *ngIf="!linksIsEqual()">
+  <div *ngIf="!linksIsEqual()" class="save-button">
     <button (click)="onSave()"> Save </button>
   </div>
 </div>

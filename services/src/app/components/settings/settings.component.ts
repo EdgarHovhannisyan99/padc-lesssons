@@ -11,14 +11,10 @@ export class SettingsComponent implements OnInit {
   links!: ILinks[]
 
   constructor(private serviceLinks: LinksServices) {
-  }
-
-  onCheck(index: number): void {
-    this.links[index].isActive = !this.links[index].isActive
+    this.links = this.serviceLinks.getLinks()
   }
 
   ngOnInit(): void {
-    this.links = this.serviceLinks.getLinks()
   }
 
   linksIsEqual(): boolean {
@@ -26,8 +22,7 @@ export class SettingsComponent implements OnInit {
   }
 
   onSave(): void {
-    console.log(this.links)
-    // this.serviceLinks.saveLinks()
+    this.serviceLinks.saveLinks(this.links)
   }
 
 }
