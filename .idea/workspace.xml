@@ -2,58 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae4af32-73eb-4f2f-bc58-dc932f3b0a42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/dashboard/dashborad.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/dashboard/dashborad.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/mainContainer/main.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/mainContainer/main.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/settings/settings.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/settings/settings.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/settings/settings.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/todos/todos.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/todos/todos.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/todos/todos.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/topBar/topBar.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/topBar/topBar.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/components/topBar/topBar.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/services/linksServices.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-test/src/app/services/topBarService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/dashboard/dashboard.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/dashboard/dashboard.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/dashboard/dashboard.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/mainContent/main.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/mainContent/main.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/mainContent/main.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/settings/settings.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/settings/settings.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/settings/settings.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/topBar/topBar.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/topBar/topBar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/compnents/topBar/topBar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/service-test/src/app/components/dashboard/dashborad.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/models/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/service-test/src/app/models/models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/app/services/links.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/service-test/src/app/components/mainContainer/main.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-test/tsconfig.spec.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/login-task/src/app/services/page.services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/dashboard/dashborad.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/dashboard/dashborad.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/dashboard/dashborad.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/mainContainer/main.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/mainContainer/main.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/mainContainer/main.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/settings/settings.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/settings/settings.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/settings/settings.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/todos/todos.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/todos/todos.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/todos/todos.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/topBar/topBar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/topBar/topBar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/components/topBar/topBar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/models/models.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/services/linksServices.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/services/todoServices.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/app/services/topBarService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/models/users.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/tsconfig.spec.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,18 +79,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/old" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\gitTest\services\src\app\services" />
       <recent name="C:\Users\user\Desktop\gitTest\old" />
       <recent name="C:\Users\user\Desktop\gitTest\service-test\src\app\services" />
       <recent name="C:\Users\user\Desktop\gitTest\service-test\src\app\components\topBar" />
       <recent name="C:\Users\user\Desktop\gitTest\service-test\src\app\components\todos" />
-      <recent name="C:\Users\user\Desktop\gitTest\service-test\src\app\components\settings" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\gitTest\service-test\src\app" />
@@ -134,6 +126,12 @@
       <workItem from="1670070909024" duration="2943000" />
       <workItem from="1670082349731" duration="18000" />
       <workItem from="1670168251506" duration="15476000" />
+      <workItem from="1670259227973" duration="717000" />
+      <workItem from="1670259953303" duration="9971000" />
+      <workItem from="1670436746609" duration="1360000" />
+      <workItem from="1670441382365" duration="649000" />
+      <workItem from="1670677021681" duration="1810000" />
+      <workItem from="1670782155597" duration="7427000" />
     </task>
     <servers />
   </component>
