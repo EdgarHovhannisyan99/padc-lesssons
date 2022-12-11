@@ -1,0 +1,7 @@
+<div>
+  <app-main>
+    <app-first-page *ngIf="getPage() === 'first-page'" ></app-first-page>
+    <app-login *ngIf="getPage() === 'login'"></app-login>
+    <app-register *ngIf="getPage() === 'register'"></app-register>
+  </app-main>
+</div>
