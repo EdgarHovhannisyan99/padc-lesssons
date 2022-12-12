@@ -1,7 +1,7 @@
 import { IUsers } from "../models/users.model"
 
 export class PageServices {
-  public activePage: string = 'recover-password'
+  public activePage: string = 'first-page'
 
   getActivePage(): string {
     return this.activePage
