@@ -1,5 +1,5 @@
 export interface IUsers {
-  usenrame: string,
+  username: string,
   email: string,
   password: string,
 }

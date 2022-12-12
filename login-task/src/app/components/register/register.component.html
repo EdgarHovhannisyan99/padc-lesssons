@@ -1,16 +1,25 @@
 <h3 class="mb-5">Register</h3>
 
 <div class="form-outline mb-4">
-  <input type="text" [(ngModel)]="username" placeholder="username" id="typeEmailX-2" class="form-control form-control-lg"/>
+  <input type="text" [(ngModel)]="username" placeholder="username" id="typeEmailX-2"
+         [ngClass]="userNameError && !username ? 'form-control form-control-lg required-input' : 'form-control form-control-lg'"/>
+  <span class="required" *ngIf="userNameError && !username">Username is required</span>
+
 </div>
 
 <div class="form-outline mb-4">
-  <input type="email"  [(ngModel)]="email" placeholder="email" id="typeEmailX-3" class="form-control form-control-lg"/>
+  <input type="email" [(ngModel)]="email" placeholder="email" id="typeEmailX-3"
+         [ngClass]="emailError && !email ? 'form-control form-control-lg required-input' : 'form-control form-control-lg'"/>
+  <span class="required" *ngIf="emailError && !email">Email is required</span>
+
 </div>
 
 
 <div class="form-outline mb-4">
-  <input type="password" [(ngModel)]="password" placeholder="password" id="typePasswordX-2" class="form-control form-control-lg"/>
+  <input type="password" [(ngModel)]="password" placeholder="password" id="typePasswordX-2"
+         [ngClass]="passwordError && !password ? 'form-control form-control-lg required-input' : 'form-control form-control-lg'"/>
+  <span class="required" *ngIf="passwordError && !password">Password is required</span>
+
 </div>
 
 
