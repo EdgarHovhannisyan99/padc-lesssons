@@ -1,7 +1,15 @@
 <div>
+  <lib-toastify-toast-container
+    [autoClose]="10000"
+    [position]="'top-left'"
+    [transition]="'zoom'"
+  ></lib-toastify-toast-container>
   <app-main>
     <app-first-page *ngIf="getPage() === 'first-page'" ></app-first-page>
     <app-login *ngIf="getPage() === 'login'"></app-login>
     <app-register *ngIf="getPage() === 'register'"></app-register>
+    <app-failed-attemps *ngIf="getPage() === 'failed-attemps'"></app-failed-attemps>
+    <app-recover-password *ngIf="getPage() === 'recover-password'"></app-recover-password>
+    <app-home  *ngIf="getPage() === 'home'"></app-home>
   </app-main>
 </div>

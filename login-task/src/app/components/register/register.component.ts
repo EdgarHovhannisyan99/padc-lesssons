@@ -11,6 +11,9 @@ export class RegisterComponent {
   public username: string = ''
   public email: string = ''
   public password: string = ''
+  public userNameError: boolean = false
+  public emailError: boolean = false
+  public passwordError: boolean = false
   users!: any
 
   constructor(private pageService: PageServices) {
@@ -18,7 +21,19 @@ export class RegisterComponent {
   }
 
   onRegister(): void {
-    this.users.push({usenrame: this.username, email: this.email, password: this.password})
+    if (!this.username) {
+      this.userNameError = true
+    }
+    if (!this.password) {
+      this.passwordError = true
+    }
+    if(!this.email){
+      this.emailError = true
+    }
+    if (!this.username || !this.password || !this.email) {
+      return
+    }
+    this.users.push({username: this.username, email: this.email, password: this.password})
     localStorage.setItem('users', JSON.stringify(this.users))
     this.pageService.changePage('login')
   }
