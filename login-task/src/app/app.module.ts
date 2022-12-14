@@ -11,6 +11,7 @@ import { ToastService, AngularToastifyModule } from 'angular-toastify';
 import { FailedAttempsComponent } from './components/failed-attemps/failed-attemps.component';
 import { RecoverPasswordComponent } from './components/recover-password/recover-password.component';
 import { HomeComponent } from './components/home/home.component';
+import {LanguagesPipe} from './pipe/languages.pipe'
 
 @NgModule({
   declarations: [
@@ -22,13 +23,14 @@ import { HomeComponent } from './components/home/home.component';
     FailedAttempsComponent,
     RecoverPasswordComponent,
     HomeComponent,
+    LanguagesPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AngularToastifyModule
   ],
-  providers: [PageServices, ToastService],
+  providers: [PageServices, ToastService, LanguagesPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

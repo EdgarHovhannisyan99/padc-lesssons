@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguagesPipe } from 'src/app/pipe/languages.pipe';
 
 @Component({
   selector: 'app-main',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppMainComponent {
 
+  constructor(private languagesPipe: LanguagesPipe) {
+  }
+
+  changeLanguage(lang: string):void {
+    return this.languagesPipe.changeLanguage(lang)
+  }
+
+  getActiveLanguage():string {
+    return this.languagesPipe.getLanguauge()
+  }
 }

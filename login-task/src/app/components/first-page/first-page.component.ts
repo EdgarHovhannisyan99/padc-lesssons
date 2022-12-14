@@ -1,4 +1,5 @@
 import {Component, Output, EventEmitter} from '@angular/core';
+import { LanguagesPipe } from 'src/app/pipe/languages.pipe';
 import { PageServices } from 'src/app/services/page.services';
 
 @Component({
@@ -8,12 +9,14 @@ import { PageServices } from 'src/app/services/page.services';
 })
 export class FirstPageComponent {
 
-  constructor(private pageService: PageServices) {
+  constructor(private pageService: PageServices, private langugagePipe: LanguagesPipe) {
   }
 
   public changePage(page: string): void {
     return this.pageService.changePage(page)
   }
+
+
 
 
 }
