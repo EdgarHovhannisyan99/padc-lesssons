@@ -1,0 +1,21 @@
+.main {
+  position: relative;
+}
+.languages {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 100%;
+  margin-left: auto;
+  button {
+    margin: 20px 15px;
+  }
+  .btn {
+    background-color: #d1cbcb;
+    color: black;
+  }
+  .btn-secondary {
+    background-color: #2424b9;
+    color: white;
+  }
+}

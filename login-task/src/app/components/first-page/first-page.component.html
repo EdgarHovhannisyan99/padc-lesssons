@@ -1,6 +1,10 @@
-<h3 class="mb-5">Do you have an account</h3>
+<h3 class="mb-5">{{'FIRST_PAGE.FIRST_PAGE_TITLE' | languages}}</h3>
 
-<button class="btn btn-primary btn-lg btn-block" (click)='changePage("login")'>Yes</button>
-<button class="btn btn-primary btn-lg btn-block" (click)='changePage("register")'>No</button>
+<button class="btn btn-primary btn-lg btn-block" (click)='changePage("login")'>
+  {{'FIRST_PAGE.FIRST_PAGE_YES' | languages}}
+</button>
+<button class="btn btn-primary btn-lg btn-block" (click)='changePage("register")'>
+  {{'FIRST_PAGE.FIRST_PAGE_NO' | languages}}
+</button>
 <hr class="my-4">
 
