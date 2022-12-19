@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppMainComponent } from './components/app-main/app-main.component';
 import { FirstPageComponent } from './components/first-page/first-page.component';
@@ -12,6 +12,7 @@ import { FailedAttempsComponent } from './components/failed-attemps/failed-attem
 import { RecoverPasswordComponent } from './components/recover-password/recover-password.component';
 import { HomeComponent } from './components/home/home.component';
 import {LanguagesPipe} from './pipe/languages.pipe'
+import { LanguageServices } from './services/language.services';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,10 @@ import {LanguagesPipe} from './pipe/languages.pipe'
   imports: [
     BrowserModule,
     FormsModule,
-    AngularToastifyModule
+    AngularToastifyModule,
+    ReactiveFormsModule
   ],
-  providers: [PageServices, ToastService, LanguagesPipe],
+  providers: [PageServices, ToastService, LanguagesPipe, LanguageServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

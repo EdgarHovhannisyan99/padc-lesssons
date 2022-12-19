@@ -1,10 +1,10 @@
 <section class="vh-100 main" style="background-color: #508bfc;">
   <div class="languages">
-    <button type="button" [ngClass]="getActiveLanguage() === 'ENG' ? 'btn btn-secondary': 'btn'"
+    <button type="button" [ngClass]="getActiveLanguage()  ? 'btn btn-secondary': 'btn'"
             (click)="changeLanguage('ENG')">ENG
     </button>
     <button type="button"
-            [ngClass]="getActiveLanguage() === 'ARM' ? 'btn btn-secondary': 'btn'"
+            [ngClass]="getActiveLanguage() ?  'btn btn-secondary': 'btn'"
             (click)="changeLanguage('ARM')">ARM
     </button>
   </div>

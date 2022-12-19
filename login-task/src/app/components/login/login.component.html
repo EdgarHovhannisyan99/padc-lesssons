@@ -1,20 +1,20 @@
 <h3 class="mb-5">LOGIN</h3>
+<form [formGroup]="loginForm" (submit)="onLogin()">
+  <div class="form-outline mb-4">
+    <input type="email" formControlName="username"  placeholder="username" id="typeEmailX-2" class="form-control form-control-lg"
+           [ngClass]="loginForm.touched && !loginForm.get('username')?.value ? 'required-input' : ''"/>
+    <span class="required" *ngIf="loginForm.get('username')?.touched && !loginForm.get('username')?.value">Username is required</span>
+  </div>
 
-<div class="form-outline mb-4">
-  <input type="email" [(ngModel)]="username" placeholder="username" id="typeEmailX-2"
-         [ngClass]="userNameError && !username ? 'form-control form-control-lg required-input' : 'form-control form-control-lg'"/>
-  <span class="required" *ngIf="userNameError && !username">Username is required</span>
-</div>
-
-<div class="form-outline mb-4">
-  <input type="password" [(ngModel)]="password" placeholder="password" id="typePasswordX-2"
-         [ngClass]="passwordError && !password ? 'form-control form-control-lg required-input' : 'form-control form-control-lg'"
-         />
-  <span class="required" *ngIf="passwordError && !password">Password is required</span>
-</div>
+  <div class="form-outline mb-4">
+    <input type="password"  formControlName="password" placeholder="password" id="typePasswordX-2" class="form-control form-control-lg"
+           [ngClass]="loginForm.touched && !loginForm.get('password')?.value ? 'required-input' : ''"
+    />
+    <span class="required" *ngIf="loginForm.get('password')?.touched  && !loginForm.get('password')?.value">Password is required</span>
+  </div>
 
 
-<button class="btn btn-primary btn-lg btn-block" (click)="onLogin()" type="submit">Login</button>
-
+  <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+</form>
 <hr class="my-4">
 

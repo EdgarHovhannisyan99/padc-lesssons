@@ -1,6 +1,7 @@
 import {Pipe, PipeTransform, Injectable} from '@angular/core'
 import {ARM} from '../languages/arm.language'
 import {ENG} from '../languages/eng.language'
+import { LanguageServices } from '../services/language.services'
 
 @Pipe({
   name: 'languages',
@@ -8,34 +9,16 @@ import {ENG} from '../languages/eng.language'
 })
 
 export class LanguagesPipe implements PipeTransform {
-  language: typeof ENG | typeof ARM = ENG
+  language!: typeof ENG | typeof ARM
 
-  constructor() {
-
+  constructor(private _languageService: LanguageServices) {
+      this.language = this._languageService.getActiveLang()
   }
 
   transform(value: string): string {
     const keys = value.split('.')
     // @ts-ignore
     return this.language[keys[0]][keys[1]]
-  }
-
-  public changeLanguage(lang: string): void {
-    if(lang === 'ARM'){
-      this.language = ARM
-    }else {
-      this.language = ENG
-    }
-    console.log(this.language)
-  }
-
-
-  public getLanguauge(): string {
-    if (this.language === ENG) {
-      return 'ENG'
-    } else {
-      return 'ARM'
-    }
   }
 
 }
