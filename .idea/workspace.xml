@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae4af32-73eb-4f2f-bc58-dc932f3b0a42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/login-task/src/app/languages/arm.language.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login-task/src/app/languages/eng.language.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login-task/src/app/pipe/languages.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login-task/src/app/customValidators/customValidator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login-task/src/app/services/language.services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login-task/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login-task/src/app/components/app-main/app-main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/app-main/app-main.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login-task/src/app/components/app-main/app-main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/app-main/app-main.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login-task/src/app/components/app-main/app-main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/app-main/app-main.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login-task/src/app/components/first-page/first-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/first-page/first-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login-task/src/app/components/first-page/first-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/first-page/first-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login-task/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login-task/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login-task/src/app/components/recover-password/recover-password.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/recover-password/recover-password.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login-task/src/app/components/recover-password/recover-password.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/recover-password/recover-password.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login-task/src/app/components/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login-task/src/app/components/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/components/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login-task/src/app/pipe/languages.pipe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/login-task/src/app/pipe/languages.pipe.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +49,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/login-task/src/app/languages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/login-task/src/app/services" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\gitTest\login-task\src\app\services" />
       <recent name="C:\Users\user\Desktop\gitTest\login-task\src\app\languages" />
       <recent name="C:\Users\user\Desktop\gitTest\services\src\app\services" />
       <recent name="C:\Users\user\Desktop\gitTest\old" />
       <recent name="C:\Users\user\Desktop\gitTest\service-test\src\app\services" />
-      <recent name="C:\Users\user\Desktop\gitTest\service-test\src\app\components\topBar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\gitTest\service-test\src\app" />
@@ -100,7 +104,10 @@
       <workItem from="1670782155597" duration="7768000" />
       <workItem from="1670866167179" duration="9828000" />
       <workItem from="1671040345568" duration="521000" />
-      <workItem from="1671040873012" duration="8689000" />
+      <workItem from="1671040873012" duration="8899000" />
+      <workItem from="1671275832779" duration="1223000" />
+      <workItem from="1671471242328" duration="494000" />
+      <workItem from="1671471743493" duration="11087000" />
     </task>
     <servers />
   </component>
@@ -123,8 +130,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/login-task/src/app/pipe/languages.pipe.ts</url>
-          <line>4</line>
-          <properties lambdaOrdinal="-1" />
+          <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

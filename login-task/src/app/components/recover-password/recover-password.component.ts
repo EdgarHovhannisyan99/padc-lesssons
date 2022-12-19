@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {FormControl, FormGroup, Validators } from '@angular/forms';
 import {ToastService} from 'angular-toastify';
 import {PageServices} from 'src/app/services/page.services';
 
@@ -8,6 +9,10 @@ import {PageServices} from 'src/app/services/page.services';
   styleUrls: ['./recover-password.component.scss']
 })
 export class RecoverPasswordComponent {
+  recoverForm = new FormGroup({
+    username: new FormControl('', [Validators.required]),
+    password: new FormControl('', [Validators.required])
+  })
   username: string = ''
   password: string = ''
   public userNameError: boolean = false
@@ -17,21 +22,12 @@ export class RecoverPasswordComponent {
   }
 
   onSave(): void {
-    if (!this.username) {
-      this.userNameError = true
-    }
-    if (!this.password) {
-      this.passwordError = true
-    }
-    if (!this.username || !this.password) {
-      return
-    }
-
-    if (this.username && this.password) {
+    this.recoverForm.markAllAsTouched()
+    if (this.recoverForm.status === 'VALID') {
       const users = this.pageService.getAllUsers()
-      const findUser = users.findIndex(i => i.username === this.username)
+      const findUser = users.findIndex((i: any) => i.username === this.recoverForm.get('username')?.value)
       if (findUser >= 0) {
-        users[findUser].password = this.password
+        users[findUser].password = this.recoverForm.get('password')?.value || ''
         localStorage.setItem('users', JSON.stringify(users))
         this.pageService.changePage('login')
       } else {
@@ -43,6 +39,5 @@ export class RecoverPasswordComponent {
       }
     }
   }
-
 
 }
